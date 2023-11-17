@@ -6,9 +6,11 @@ import matplotlib.pyplot as plt
 #data mininig
 
 df = pd.read_csv('data.csv')
-df
-st.title('Data Analysis')
 
+st.title('Data Analysis')
+if st.sidebar.button("show data"):
+  st.write(df)
+  
 
 
 
