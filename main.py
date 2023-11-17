@@ -5,14 +5,10 @@ import matplotlib.pyplot as plt
 
 #data mininig
 
-df = pd.read_csv('data.csv')
+df = pd.read_csv('cricket.csv')
+df
 
-st.title('Data Analysis')
-if st.sidebar.button("show data"):
-  st.write(df)
-  
-if st.sidebar.button("title"):
-  st.title("hello how are you")
+
 
 
 
