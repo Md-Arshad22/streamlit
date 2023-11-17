@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 #data mininig
 
-df = pd.read_csv('cricket.csv')
+df = pd.read_csv('data.csv')
 df
 
 
