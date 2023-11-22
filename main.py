@@ -16,13 +16,13 @@ if st.sidebar.button('load describtion'):
   st.write(df.describe())
 
 a1 = pd.DataFrame(df['year'],df['TotalPrice'])
-st.linechart(a1)
+st.pyplot(a1)
 
-a1 = pd.DataFrame(df['year'], df['TotalPrice'])
+# a1 = pd.DataFrame(df['year'], df['TotalPrice'])
 
-fig=plt.figure(figsize=(10,8))
-plt.plot(df['year'],df['TotalPrice'])
-st.pyplot(fig)
+# fig=plt.figure(figsize=(10,8))
+# plt.plot(df['year'],df['TotalPrice'])
+# st.pyplot(fig)
 
 
 
