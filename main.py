@@ -12,6 +12,10 @@ st.title('Data Analysis')
 if st.sidebar.button("show data"):
   st.write(df)
 
+if st.sidebar.button('load describtion'):
+  st.write(df.describe())
+
+
 
 
 
