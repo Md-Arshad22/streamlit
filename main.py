@@ -15,14 +15,18 @@ if st.sidebar.button("show data"):
 if st.sidebar.button('load describtion'):
   st.write(df.describe())
 
-a1 = pd.DataFrame(df['year'],df['TotalPrice'])
-st.line_chart(a1)
+# a1 = pd.DataFrame(df['year'],df['TotalPrice'])
+# st.line_chart(a1)
+# a1 = pd.DataFrame(df['year'], df['TotalPrice'])
+# fig=plt.figure(figsize=(10,8))
+# plt.plot(df['year'],df['TotalPrice'])
+# st.pyplot(fig)
 
-a1 = pd.DataFrame(df['year'], df['TotalPrice'])
+data = pd.DataFrame({
+    'x': np.arange(10),
+    'y': np.random.randint(1, 10, 10)
+})
 
-fig=plt.figure(figsize=(10,8))
-plt.plot(df['year'],df['TotalPrice'])
-st.pyplot(fig)
-
-
+# Create a bar chart
+st.bar_chart(data.set_index('x'))
 
