@@ -16,7 +16,7 @@ if st.sidebar.button('load describtion'):
   st.write(df.describe())
 
 a1 = pd.DataFrame(df['year'],df['TotalPrice'])
-st.line_chat(a1)
+st.line_chart(a1)
 
 a1 = pd.DataFrame(df['year'], df['TotalPrice'])
 
