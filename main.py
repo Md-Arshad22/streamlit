@@ -28,5 +28,5 @@ data = pd.DataFrame({
 })
 
 # Create a bar chart
-st.bar_chart(data.('x'))
+st.bar_chart(data('x'))
 
